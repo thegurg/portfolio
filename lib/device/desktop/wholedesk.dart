@@ -146,8 +146,12 @@ class Wholedesk extends StatelessWidget {
               Spacer(),
               Padding(
                 padding: const EdgeInsets.only(top: 10, bottom: 10),
-                child: Card(
-                  color: themeProvider.fontekst,
+                child: Container(
+                  width: 350,
+                  decoration: BoxDecoration(
+                    color: themeProvider.fontekst,
+                    boxShadow: [BoxShadow(color: themeProvider.fontekst, blurRadius: 20,spreadRadius: 2, offset: Offset(0, 0))]
+                  ),
                   child: Column(
                     children: [
                       Text(
@@ -164,7 +168,7 @@ class Wholedesk extends StatelessWidget {
                           color: themeProvider.svet2,
                         ),
                       ),
-
+                  
                       Text(
                         'web',
                         style: TextStyle(
